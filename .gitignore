@@ -2,3 +2,5 @@ venv/
 *.pth
 runs/
 .ipynb_checkpoints/
+.idea
+__pycache__
