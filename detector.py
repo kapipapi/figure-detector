@@ -2,8 +2,8 @@ import torch
 
 
 class Detector:
-    def __init__(self, yolo_root_path, yolo_weights_path):
-        self.model = torch.hub.load(yolo_root_path, 'custom', path=yolo_weights_path, source='local')
+    def __init__(self, yolo_weights_path):
+        self.model = torch.hub.load('ultralytics/yolov5', 'custom', path=yolo_weights_path)
 
         self.device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 

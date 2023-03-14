@@ -1,6 +1,8 @@
 venv/
 *.pth
+*.pt
 runs/
 .ipynb_checkpoints/
 .idea
 __pycache__
+/yolo_weights.pt

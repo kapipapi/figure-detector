@@ -8,7 +8,7 @@ from detector import Detector
 from letter_model import LetterModel
 
 if __name__ == "__main__":
-    d = Detector("../yolov5", "../yolov5/runs/train/exp5/weights/best.pt")
+    d = Detector("yolo_weights.pt")
     lm = LetterModel("model_weights.pth")
 
     samples = []
